@@ -25,3 +25,15 @@ function prodi()
 {
   return q("SELECT * FROM prodi");
 }
+
+function prodi_satu($id_prodi, $isi_tabel)
+{
+  $x = qs("SELECT * FROM prodi WHERE id = '$id_prodi'");
+  return $x[$isi_tabel];
+}
+
+
+function mahasiswa()
+{
+  return q("SELECT * FROM mahasiswa");
+}
