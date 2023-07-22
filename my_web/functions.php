@@ -50,3 +50,13 @@ function user_username_satu($username, $isi_tabel)
   $x = qs("SELECT * FROM user WHERE username = '$username'");
   return $x[$isi_tabel];
 }
+
+?>
+
+<script>
+  function logout(url) {
+    if (confirm("Apakah anda ingin logout?")) {
+      location = url
+    }
+  }
+</script>
